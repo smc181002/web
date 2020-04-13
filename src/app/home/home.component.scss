@@ -1,0 +1,48 @@
+div.home{
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 35vw;
+  transform: translate(-50%, -35%);
+  display: block;
+  margin: 20px;
+  h1.head{
+    position: relative;
+    width: 40vw;
+    font-weight: 800;
+    font-size: 48px !important;
+  }
+  label.tagline{
+    opacity: 0.9;
+  }
+  button.work{
+    padding: 8px 20px;
+    background: #0066FF;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    display: block;
+    margin-top: 40px;
+    font-size: 16px;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
+  }
+}
+
+@media (max-width: 750px){
+  div.home{
+    width: 80vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    h1.head{
+      width: 70vw;
+      font-size: 36px !important;
+    }
+    label.tagline{
+      font-size: 14px;
+    }
+  }
+
+}

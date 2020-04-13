@@ -1,0 +1,91 @@
+div.port{
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  display: grid;
+  grid-template-areas: 
+  'i i h h h h'
+  'i i h h h h'
+  'i i p p p p'
+  'i i  g g l l ';
+  align-items: center;
+  justify-content: center;
+  // height: 60vh;
+  img.profile{
+    grid-area: i;
+    width: 400px;
+    clip-path: circle(30% at 45% 50%);
+    align-self: center;
+    justify-self: center;
+  }
+
+  h1{
+    grid-area: h;
+    align-self: center;
+  }
+  p{
+    grid-area: p;
+    align-self: center;
+    justify-self: center;
+  }
+  .linkdin,.github{
+    width: 80px;
+    padding: 8px 20px;
+    align-self: center;
+    justify-self: center;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    color: white;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    img{
+      width: 15px;
+    }
+  } 
+  .github{
+    grid-area: g;
+    background: #272727;
+  }
+  .linkdin{
+    grid-area: l;
+    background: #003E9A;
+  }
+}
+
+@media (max-width: 850px){
+  div.port{
+    grid-template-areas: 
+    'i i i i'
+    'h h h h'
+    'p p p p'
+    'g g l l';
+  }
+}
+
+@media (max-width: 540px){
+div.port{
+  display: flexbox;
+  flex-direction: column;
+  justify-content: center;
+    h1{
+      font-size: 26px !important;
+    }
+    p{
+      margin: 10px 0;
+      font-size: 16px;
+      // width: 200px;
+    }
+    img.profile{
+      width: 200px;
+    }
+    a{
+      display: block;
+      margin: 20px 0;
+    }
+  }
+}

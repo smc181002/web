@@ -1,0 +1,7 @@
+<div class="work">
+  <div *ngFor="let work of works">
+    <h1>{{ work.title }}</h1>
+    <p>{{ work.description }}</p>
+    <a href={{work.link}} target="_blank" ><img src="../../assets/github.svg" alt="">GitHub</a>
+  </div>
+</div>

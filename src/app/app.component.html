@@ -1,1 +1,17 @@
+<nav class="nav-bar">
+  <label for="">linuxUsr</label>
+    <label for="menu-btn" name="navBtn" class="ripple">
+        <svg width="35" height="10" viewBox="0 0 30 15" fill="none" id="sign-one">
+          <rect width="30" height="3" rx="1.5" fill=#378fe7 id="one"/>
+          <rect y="12" width="30" height="3" rx="1.5" fill=#378fe7 id="two"/>
+        </svg>
+    </label>
+    <input type="checkbox" id="menu-btn"/>
+    <ul class="nav-list">
+      <li routerLink="/home" routerLinkActive="active" class="nav-link" >home</li>
+      <li class="nav-link"  routerLink="/work" routerLinkActive="active">Works</li>
+      <li class="nav-link" routerLink="/portfolio" [routerLinkActive]="['active']">Portfolio</li>
+  </ul>
+</nav>
+
 <router-outlet></router-outlet>
